@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+   integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"
+   integrity="sha512-X/YkDZyjTf4wyc2Vy16YGCPHwAY8rZJY+POgokZjQB2mhIRFJCckEGc6YyX9eNsPfn0PzThEuNs+uaomE5CO6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>فريقنا</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+*{
+    font-family: 'Tajawal', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+}
+.navbar {
+    background-color:#ffffff;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    height: 100px;
+    justify-content:center;
+    align-items: center;
+    padding: 10px 100px ;
+    direction: rtl;
+}
+
+.navbar-nav{
+    margin-right: 50px;
+}
+.navbar-nav a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.0em;
+    font-weight: 500;
+    padding-left: 50px;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    
+}
+a:hover{
+    color: #c6b37e;
+    transition: 0.3s;
+}
+.dropdown{
+  color: #000000;
+    text-decoration: none;
+    font-size: 1.0em;
+    font-weight: 500;
+    padding-left: 50px;
+    margin-top: -5px;
+    align-items: center;
+    justify-content: center;
+}
+.nav-item{
+justify-content: end;
+align-items: end;
+}
+.dropdown a{
+  color: #000000;
+    text-decoration: none;
+    font-size: 1.0em;
+    font-weight: 500;
+    padding-left: 50px;
+    align-items: end;
+    justify-content: end;
+}
+.dropdown a:hover{
+  color: #c6b37e;
+    transition: 0.3s;
+}
+
+
+
+.logo-nav{
+    width: 100px;
+    height: 100px;
+    justify-content: end;
+    align-items: end;
+    margin-right: 130px;
+}
+
+@media (max-width:400px) {
+  
+
+
+  .logo-nav{
+      width: 100px;
+      height: 100px;
+  }
+
+  .navbar-toggler{
+    margin-top: -55;
+  }
+  .navbar-nav{
+    background: #ffffff;
+      border-color:#ffffff;
+      box-shadow: rgba(62, 62, 62, 0.1) 0px 1px 1px 1px;
+  }
+  
+  .navbar-nav a {
+      color: #000000;
+      text-decoration: none;
+      font-size: 1.0em;
+      font-weight: 500;
+      align-items: center;
+      justify-content: center;
+  
+      
+  }
+  a:hover{
+      color: #c6b37e;
+      transition: 0.3s;
+  }
+  .contact-nav-a{
+    white-space: nowrap;
+  }
+  }
+@media (max-width:480px) {
+  
+
+
+.logo-navbar{
+    width: 100px;
+    height: 100px;
+    padding-right: 10px;
+}
+.navbar-toggler{
+  margin-right: 200px;
+}
+.navbar-nav{
+  background: #ffffff;
+    border-color:#ffffff;
+    box-shadow: rgba(62, 62, 62, 0.1) 0px 1px 1px 1px;
+}
+
+.navbar-nav a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.0em;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    
+}
+a:hover{
+    color: #c6b37e;
+    transition: 0.3s;
+}
+.contact-nav-a{
+  white-space: nowrap;
+}
+
+.dropdown-menu{
+  margin-right: 0px;
+  border-left-width: 1.2;
+  border-right-width: 2px;
+  border-bottom-width: 3px;
+  border-top-width: 4px;
+  padding-bottom: 1px;
+  padding-top: 1px;
+
+}
+
+}
+@media   (max-width:768px) {
+  
+
+
+  
+  .logo-nav{
+      width: 100px;
+      height: 100px;
+  margin-right: -40px;
+  margin-top: 10px;
+  }
+  .navbar-toggler{
+    margin-right: 200px;
+  }
+  .navbar-nav{
+  background: #ffffff;
+    border-color:#ffffff;
+    box-shadow: rgba(62, 62, 62, 0.1) 0px 1px 1px 1px;
+    margin-left: 20px;
+}
+  .navbar-nav a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.0em;
+    font-weight: 500;
+    padding-right: 160px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 120px;
+
+    
+}
+a:hover{
+    color: #c6b37e;
+    transition: 0.3s;
+}
+
+.dropdown-menu{
+  direction: ltr;
+  text-align: center;
+  margin-right:250px;
+  margin-bottom: 6px;
+
+}
+.dropdown-item2{
+  direction: ltr;
+  text-align: end;
+  white-space: nowrap;
+}
+.dropdown a:hover{
+  color: #c6b37e;
+    transition: 0.3s;
+}
+.about-nav-a{
+  white-space: nowrap;
+}
+.contact-nav-a{
+  white-space: nowrap;
+}
+  } 
+@media   (max-width:991px) {
+  
+
+
+  
+  .logo-nav{
+      width: 100px;
+      height: 100px;
+  margin-right: -40px;
+  margin-top: 10px;
+  }
+  .navbar-toggler{
+    margin-right: 200px;
+  }
+  .navbar-nav{
+  background: #ffffff;
+    border-color:#ffffff;
+    box-shadow: rgba(62, 62, 62, 0.1) 0px 1px 1px 1px;
+    direction: ltr;
+}
+  .navbar-nav a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.0em;
+    font-weight: 500;
+    direction: ltr;
+
+
+    
+    
+}
+a:hover{
+    color: #c6b37e;
+    transition: 0.3s;
+}
+
+.dropdown{
+  color: #000000;
+    text-decoration: none;
+    font-size: 1.0em;
+    font-weight: 500;
+    direction: ltr;
+}
+.dropdown a:hover{
+  color: #c6b37e;
+    transition: 0.3s;
+}
+.dropdown-menu{
+  direction: ltr;
+  text-align: center;
+  margin-right:350px;
+  margin-bottom: 6px;
+}
+.dropdown-menu a{
+  direction: ltr;
+  text-align: center;
+
+}
+.dropdown-item2{
+  direction: ltr;
+  text-align: center;
+  margin-right: 30px;
+  
+
+
+}
+.contact-nav-a{
+  white-space: nowrap;
+}
+.about-nav-a{
+  direction: ltr;
+  margin-left: -50px;
+}
+  } 
+@media   (max-width:1024px) {
+  
+
+
+  
+  .logo-nav{
+      width: 100px;
+      height: 100px;
+      margin-right: 30px;
+  }
+  .navbar {
+    background-color: #ffffff;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    height: 100px;
+    justify-content:center;
+    align-items: center;
+    padding: 0px 10px ; 
+    /* margin-left: 80px; */
+    direction: rtl;
+}
+
+
+  .navbar-nav a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.0em;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    margin-right: -5px;
+}
+a:hover{
+    color: #c6b37e;
+    transition: 0.3s;
+}
+.dropdown a:hover{
+  color: #c6b37e;
+    transition: 0.3s;
+}
+.contact-nav-a{
+  white-space: nowrap;
+}
+.about-nav-a{
+  white-space: nowrap;
+}
+  } 
+@media   (min-width:1200px) {
+    .navbar {
+    background-color:#ffffff;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    height: 100px;
+    justify-content:center;
+    align-items: center;
+    direction: rtl;
+}
+.navbar-nav{
+    margin-right: 10px;
+}
+.navbar-nav a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.0em;
+    font-weight: 500;
+    padding-left: 50px;
+    align-items: center;
+    justify-content: center;
+    
+}
+a:hover{
+    color: #c6b37e;
+    transition: 0.3s;
+}
+.dropdown a:hover{
+  color: #c6b37e;
+    transition: 0.3s;
+}
+.logo-navbar{
+  margin-right: -70px;
+}
+.logo-nav{
+    width: 100px;
+    height: 100px;
+    justify-content: end;
+    align-items: end;
+}
+.contact-nav-a{
+  white-space: nowrap;
+}
+.about-nav-a{
+  white-space: nowrap;
+}
+  }
+    </style>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container">
+
+          <div class="logo-navbar" >
+            <a  href=""><img src="images/BEEAH-Logo-PNG (1).png" class="logo-nav " alt=""></a>
+          </div>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav ms-auto">
+
+              <li >
+                <a href="home2.html">الرئيسية</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link about-nav-a  " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" >
+                  نبذه عنا
+                </a>
+                <ul class="dropdown-menu "></ul>
+               
+                  <li><a class="dropdown-item2" href="#">م.علي الشعيبي</a></li>
+                  <li><a class="dropdown-item2" href="#">فريقنا</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="services.html">خدماتنا</a>
+            </li>
+                            
+            <li>
+              <a href="project.html">المشاريع</a>
+              </li>
+
+              <li>
+                <a href="#">أفكار</a>
+            </li>
+
+            <li><a href="#">التوظيف</a></li>
+           
+            <li>
+              <a class="contact-nav-a" href="contact.html">تواصل معنا</a>
+          </li>
+
+                
+            <li><a href="#contact">English</a></li>
+             
+
+
+
+
+            </ul>
+          </div>
+
+        </div>
+      </nav>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+

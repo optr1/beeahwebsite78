@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>فريقنا</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+      *{
+          font-family: 'Tajawal', sans-serif;
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          scroll-behavior: smooth; 
+      }
+      .navbar {
+          background-color:#ffffff;
+          width: 100%;
+          position: fixed;
+          z-index: 999;
+          display: flex;
+          height: 100px;
+          justify-content:center;
+          align-items: center;
+          padding: 10px 100px ;
+          direction: rtl;
+      }
+      
+      .navbar-nav{
+          margin-right: 50px;
+      }
+      .navbar-nav a {
+          color: #000000;
+          text-decoration: none;
+          font-size: 1.0em;
+          font-weight: 500;
+          padding-left: 50px;
+          align-items: center;
+          justify-content: center;
+          font-size: 14px;
+          
+      }
+      a:hover{
+          color: #c6b37e;
+          transition: 0.3s;
+      }
+      .dropdown{
+        color: #000000;
+          text-decoration: none;
+          font-size: 1.0em;
+          font-weight: 500;
+          padding-left: 50px;
+          margin-top: -5px;
+          align-items: center;
+          justify-content: center;
+      }
+      .nav-item{
+      justify-content: end;
+      align-items: end;
+      }
+      .dropdown a{
+        color: #000000;
+          text-decoration: none;
+          font-size: 1.0em;
+          font-weight: 500;
+          padding-left: 50px;
+          align-items: end;
+          justify-content: end;
+      }
+      .dropdown a:hover{
+        color: #c6b37e;
+          transition: 0.3s;
+      }
+      
+      
+      
+      .logo-nav{
+          width: 100px;
+          height: 100px;
+          justify-content: end;
+          align-items: end;
+          margin-right: 130px;
+      }
+      
+      @media (max-width:400px) {
+        
+      
+      
+        .logo-nav{
+            width: 100px;
+            height: 100px;
+        }
+      
+        .navbar-toggler{
+          margin-top: -55;
+        }
+        .navbar-nav{
+          background: #ffffff;
+            border-color:#ffffff;
+            box-shadow: rgba(62, 62, 62, 0.1) 0px 1px 1px 1px;
+        }
+        
+        .navbar-nav a {
+            color: #000000;
+            text-decoration: none;
+            font-size: 1.0em;
+            font-weight: 500;
+            align-items: center;
+            justify-content: center;
+        
+            
+        }
+        a:hover{
+            color: #c6b37e;
+            transition: 0.3s;
+        }
+        .contact-nav-a{
+          white-space: nowrap;
+        }
+        }
+      @media (max-width:480px) {
+        
+      
+      
+      .logo-navbar{
+          width: 100px;
+          height: 100px;
+          padding-right: 10px;
+      }
+      .navbar-toggler{
+        margin-right: 200px;
+      }
+      .navbar-nav{
+        background: #ffffff;
+          border-color:#ffffff;
+          box-shadow: rgba(62, 62, 62, 0.1) 0px 1px 1px 1px;
+      }
+      
+      .navbar-nav a {
+          color: #000000;
+          text-decoration: none;
+          font-size: 1.0em;
+          font-weight: 500;
+          align-items: center;
+          justify-content: center;
+          
+      }
+      a:hover{
+          color: #c6b37e;
+          transition: 0.3s;
+      }
+      .contact-nav-a{
+        white-space: nowrap;
+      }
+      }
+       @media   (max-width:768px) {
+        
+      
+      
+        
+        .logo-nav{
+            width: 100px;
+            height: 100px;
+        margin-right: -40px;
+        margin-top: 10px;
+        }
+        .navbar-toggler{
+          margin-right: 200px;
+        }
+        .navbar-nav{
+        background: #ffffff;
+          border-color:#ffffff;
+          box-shadow: rgba(62, 62, 62, 0.1) 0px 1px 1px 1px;
+          margin-left: 20px;
+      }
+        .navbar-nav a {
+          color: #000000;
+          text-decoration: none;
+          font-size: 1.0em;
+          font-weight: 500;
+          padding-right: 160px;
+          align-items: center;
+          justify-content: center;
+          margin-right: 120px;
+      
+          
+      }
+      a:hover{
+          color: #c6b37e;
+          transition: 0.3s;
+      }
+
+      .dropdown-menu{
+        direction: ltr;
+        text-align: center;
+        margin-right:250px;
+        margin-bottom: 6px;
+      
+      }
+      .dropdown-item2{
+        direction: ltr;
+        text-align: end;
+        white-space: nowrap;
+      }
+      .dropdown a:hover{
+        color: #c6b37e;
+          transition: 0.3s;
+      }
+      .about-nav-a{
+        white-space: nowrap;
+      }
+      .contact-nav-a{
+        white-space: nowrap;
+      }
+        } 
+        @media   (max-width:991px) {
+        
+      
+      
+        
+        .logo-nav{
+            width: 100px;
+            height: 100px;
+        margin-right: -40px;
+        margin-top: 10px;
+        }
+        .navbar-toggler{
+          margin-right: 200px;
+        }
+        .navbar-nav{
+        background: #ffffff;
+          border-color:#ffffff;
+          box-shadow: rgba(62, 62, 62, 0.1) 0px 1px 1px 1px;
+          direction: ltr;
+      }
+        .navbar-nav a {
+          color: #000000;
+          text-decoration: none;
+          font-size: 1.0em;
+          font-weight: 500;
+          direction: ltr;
+      
+      
+          
+          
+      }
+      a:hover{
+          color: #c6b37e;
+          transition: 0.3s;
+      }
+      
+      .dropdown{
+        color: #000000;
+          text-decoration: none;
+          font-size: 1.0em;
+          font-weight: 500;
+          direction: ltr;
+      }
+      .dropdown a:hover{
+        color: #c6b37e;
+          transition: 0.3s;
+      }
+      .dropdown-menu{
+        direction: ltr;
+        text-align: center;
+        margin-right:350px;
+        margin-bottom: 6px;
+      }
+      .dropdown-menu a{
+        direction: ltr;
+        text-align: center;
+      
+      }
+      .dropdown-item2{
+        direction: ltr;
+        text-align: center;
+        margin-right: 30px;
+        
+      
+      
+      }
+      .contact-nav-a{
+        white-space: nowrap;
+      }
+      .about-nav-a{
+        direction: ltr;
+        margin-left: -50px;
+      }
+        } 
+        @media   (max-width:1024px) {
+        
+      
+      
+        
+        .logo-nav{
+            width: 100px;
+            height: 100px;
+            margin-right: 30px;
+        }
+        .navbar {
+          background-color: #ffffff;
+          width: 100%;
+          position: fixed;
+          z-index: 999;
+          display: flex;
+          height: 100px;
+          justify-content:center;
+          align-items: center;
+          padding: 0px 10px ; 
+          /* margin-left: 80px; */
+          direction: rtl;
+      }
+      
+      
+        .navbar-nav a {
+          color: #000000;
+          text-decoration: none;
+          font-size: 1.0em;
+          font-weight: 500;
+          align-items: center;
+          justify-content: center;
+          margin-right: -10px;
+      }
+      a:hover{
+          color: #c6b37e;
+          transition: 0.3s;
+      }
+      .dropdown a:hover{
+        color: #c6b37e;
+          transition: 0.3s;
+      }
+      .contact-nav-a{
+        white-space: nowrap;
+      }
+      .about-nav-a{
+        white-space: nowrap;
+      }
+        } 
+        @media   (min-width:1200px) {
+          .navbar {
+          background-color:#ffffff;
+          width: 100%;
+          position: fixed;
+          z-index: 999;
+          display: flex;
+          height: 100px;
+          justify-content:center;
+          align-items: center;
+          direction: rtl;
+      }
+      .navbar-nav{
+          margin-right: 10px;
+      }
+      .navbar-nav a {
+          color: #000000;
+          text-decoration: none;
+          font-size: 1.0em;
+          font-weight: 500;
+          padding-left: 50px;
+          align-items: center;
+          justify-content: center;
+          
+      }
+      a:hover{
+          color: #c6b37e;
+          transition: 0.3s;
+      }
+      .dropdown a:hover{
+        color: #c6b37e;
+          transition: 0.3s;
+      }
+      .logo-navbar{
+        margin-right: -70px;
+      }
+      .logo-nav{
+          width: 100px;
+          height: 100px;
+          justify-content: end;
+          align-items: end;
+      }
+      .contact-nav-a{
+        white-space: nowrap;
+      }
+      .about-nav-a{
+        white-space: nowrap;
+      }
+        }
+          </style>
+      
+</head>
+<nav class="navbar navbar-expand-lg navbar-light ">
+  <div class="container">
+
+    <div class="logo-navbar" >
+      <a  href=""><img src="images/BEEAH-Logo-PNG (1).png" class="logo-nav " alt=""></a>
+    </div>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+
+      <ul class="navbar-nav ms-auto">
+
+        <li >
+          <a href="home2.html">الرئيسية</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link about-nav-a  " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" >
+            نبذه عنا
+          </a>
+          <ul class="dropdown-menu " >
+            <li><a class="dropdown-item2" href="Mr.Ali.html">م.علي الشعيبي</a></li>
+            <li><a class="dropdown-item2" href="our-team.html">فريقنا</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="services.html">خدماتنا</a>
+      </li>
+                      
+      <li>
+        <a href="project.html">المشاريع</a>
+        </li>
+
+        <li>
+          <a href="#">أفكار</a>
+      </li>
+
+      <li><a href="#">التوظيف</a></li>
+     
+      <li>
+        <a class="contact-nav-a" href="contact.html">تواصل معنا</a>
+    </li>
+
+          
+      <li><a href="#">English</a></li>
+       
+
+
+
+
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+   <br><br><br> 
+    <section class="bg-t-our" style="width:auto;">   
+
+      <div class="t-our-1">
+        <a href="#our-team" class="our-a">فريقنا</a>
+        <a href="#home" class="home-a">الرئيسية </a>
+      </div>
+
+    <h4 class="t-our ">فريقنا</h4>
+
+</section>
+
+
+    <section class="container-fluid our-team">
+      <div>
+        <h1 class="title-our">The Creative Crew</h1>
+        <p class="dec-our">Who we are</p>
+        <p class="dec-team">Nullam non feugiat metus. Vestibulum interdum erat libero. Aliquam at nisl non leo pellentesque aliquet. Quisque congue eget justo quis rhoncus. Aenean facilisis sit
+             amet urna et dictum. Nunc vitae sem nibh. Mauris ornare fermentum consequat.
+        </p>
+    
+        <p class="dec2-our">Our Mission</p>
+        <p class="dec2-team">Nullam non feugiat metus. Vestibulum interdum erat libero. Aliquam at nisl non leo pellentesque aliquet. Quisque congue eget justo quis rhoncus. Aenean facilisis sit amet urna et dictum. Nunc vitae sem nibh. Mauris ornare fermentum consequat.
+    
+        </p></div>
+
+
+<div class="row-emp1">
+
+
+
+ 
+  <div class="col-4 card-emp">
+    <img src="images/handsome-businessman-suit-glasses-cross-arms-chest-look.jpg" alt="Avatar" class="image-emp">
+    <div class="overlay">
+      <div class="text-emp">MOHAMMED ALSHEHRI <br>IT</div>
+    </div>
+  </div>
+ 
+  <div class="col-4 card-emp">
+    <img src="images/handsome-businessman-suit-glasses-cross-arms-chest-look.jpg" alt="Avatar" class="image-emp">
+    <div class="overlay">
+      <div class="text-emp">MOHAMMED ALSHEHRI <br>IT</div>
+    </div>
+  </div>
+ 
+  <div class="col-4 card-emp">
+    <img src="images/handsome-businessman-suit-glasses-cross-arms-chest-look.jpg" alt="Avatar" class="image-emp">
+    <div class="overlay">
+      <div class="text-emp">MOHAMMED ALSHEHRI <br>IT</div>
+    </div>
+  </div>
+</div>
+
+<div class="row-emp2">
+  <div class="col-4 card-emp">
+    <img src="images/handsome-businessman-suit-glasses-cross-arms-chest-look.jpg" alt="Avatar" class="image-emp">
+    <div class="overlay">
+      <div class="text-emp">MOHAMMED ALSHEHRI <br>IT</div>
+    </div>
+  </div>
+ 
+  <div class="col-4 card-emp">
+    <img src="images/handsome-businessman-suit-glasses-cross-arms-chest-look.jpg" alt="Avatar" class="image-emp">
+    <div class="overlay">
+      <div class="text-emp">MOHAMMED ALSHEHRI <br>IT</div>
+    </div>
+  </div>
+ 
+  <div class="col-4 card-emp">
+    <img src="images/handsome-businessman-suit-glasses-cross-arms-chest-look.jpg" alt="Avatar" class="image-emp">
+    <div class="overlay">
+      <div class="text-emp">MOHAMMED ALSHEHRI <br>IT</div>
+    </div>
+  </div>
+</div>
+
+
+
+                                  
+ </div>
+
+    </section>
+
+<section>
+<div class="container">
+  <h4 class="title-collapse">Open positions</h4>
+  <div class="row">
+    <div class="col-12">
+
+      <div class="accordion" id="accordionExample">
+
+        <div class="card-positions">
+          <div class="card-header" id="headingone">
+            <h2 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" type="button"
+               data-target="#collapseone" aria-expanded="true"
+                aria-controls="collapseone">
+              Collapsible Group 1
+            </button>
+            </h2>
+          </div>
+
+          <div id="collapseone" class="collapse show"
+          data-parent="#accordionExample" aria-labelledby="headingone">
+            <div class="card-body m-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat.
+          </div>
+          <button type="button" class="btn btn-outline-dark btn-collapse btn-sm">Apply</button>
+          </div>
+        </div>
+
+        <div class="card-positions">
+          <div class="card-header" id="headingsecond">
+            <h2 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" type="button"
+               data-target="#collapsesecond" aria-expanded="true"
+                aria-controls="collapsesecond">
+              Collapsible Group 2
+            </button>
+            </h2>
+          </div>
+
+          <div id="collapsesecond" class="collapse show"
+          data-parent="#accordionExample" aria-labelledby="headingsecond">
+            <div class="card-body m-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat.
+          </div>
+          <button type="button" class="btn btn-outline-dark btn-collapse btn-sm">Apply </button>
+          </div>
+        </div>
+
+        <div class="card-positions">
+          <div class="card-header" id="headingthird">
+            <h2 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" type="button"
+               data-target="#collapsethird" aria-expanded="true"
+                aria-controls="collapsethird">
+              Collapsible Group 3
+            </button>
+            </h2>
+          </div>
+
+          <div id="collapsethird" class="collapse show"
+          data-parent="#accordionExample" aria-labelledby="headingthird">
+            <div class="card-body m-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat.
+          </div>
+          <button type="button" class="btn btn-outline-dark btn-collapse btn-sm ">Apply </button>
+          </div>
+        </div>
+
+
+  
+
+      </div>
+    </div>
+
+
+
+
+  </div>
+</div>
+</section>
+
+
+
+
+<footer class="" style="background-color: #050505;">
+  <div class="">
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 ">
+      <!-- Right -->
+      <div>
+          <a href="" class=" text-reset">
+              <img src="images/dark_logo-150x150.png" class="logo-footer" style="width: 150px; height:150px" alt="">
+            </a>
+
+      </div>
+      <!-- Left -->
+
+      <div class=" d-none d-lg-block icon">
+          <a href="" class="me-4 text-reset ">
+              <img src="images/icons8-facebook-24.png" style="width:25px; height:25px;">
+            </a>
+            <a href="" class="me-4 text-reset ">
+              <img src="images/behance.png" style="width:25px; height:25px;">
+            </a>
+            <a href="" class="me-4 text-reset ">
+              <img src="images/icons8-instagram-32.png" style="width:25px; height:25px;">
+            </a>
+      </div>
+
+      <!-- Right -->
+    </section>
+    
+    <section id="contact">
+      <div class="row">
+          <div class="col-3 div-email">
+              <h6 class="title-email"  style="color: #ffffff; ">
+                  سجل لتبقى على اطلاع
+                </h6>
+                <p class="text-end"  style="color: #ffffff; opacity: 60%;">
+                  اشترك في النشرة الإخبارية لتكون على اطلاع.
+                </p>
+                <br> <br>
+    
+               <div> <input type="email" style="color: #ffffff; opacity: 60%;"
+                 class="form-control" placeholder="ادخل بريدك الإلكتروني"> </div>
+    <br>
+                <button class="button-email btn btn-secondary"  style="color: #ffffff; opacity: 30%;"></button>
+    
+          </div>
+          
+          <div class="col-3">
+              <h6 class="text-uppercase fw-bold mb-4 title-address"  style="color: #ffffff;">
+                  تواصل معنا
+              </h6>
+              <div  style="color: #ffffff; opacity: 60%;"><p class="text-reset">البيئة: مخططون ومعماريون ومهندسون ص.ب.85745,الرياض,11612 المملكة العربية السعودية</p></div>
+  
+  
+             <div  style="color: #ffffff; opacity: 60%;"> <p class="text-reset phone">التلفون:
+                 <a class="" href="00966 11 4543330"  style="color: #ffffff; opacity: 60%;">00966 11 4543330</a></p></div>
+  
+            <div  style="color: #ffffff; opacity: 60%;"> <p class="text-reset phone">فاكس: 
+                <a class="phone" href="00966 11 4550664"  style="color: #ffffff; opacity: 60%;">00966 11 4550664</a> </p></div>
+          </div>
+                          
+          <div class="col-3  ">
+              <h6 class="text-uppercase fw-bold mb-4"><button class="button-download" style="background-color:#c6b37e;color: #ffffff;">
+                  تحميل الملف التعريفي
+                  <img src="images/direct-download.png" class="m-1"
+                      style="width: 15px; height:15px; " alt=""></button>
+                    </h6>
+      
+      
+                        <nav class="navigations-footer " style="color: #ffffff;">
+                          
+                          <a href="#home" class="text-reset link-custom" style="color: #ffffff; opacity: 80%;">الرئيسية</a>
+                          <a href="#aboutus" class="text-reset link-custom" style="color: #ffffff; opacity: 80%;">نبذة عنا</a>
+                          <a href="#services" class="text-reset link-custom" style="color: #ffffff; opacity: 80%;">خدماتنا</a>
+                          <a href="#projects" class="text-reset link-custom" style="color: #ffffff; opacity: 80%;">المشاريع</a>
+                        </nav>
+                        <nav class="navigations-footer " style="color: #ffffff;">
+                          <a href="#insights" class="text-reset link-custom" style="color: #ffffff; opacity: 80%;">أفكار</a>
+                          <a href="#career" class="text-reset link-custom" style="color: #ffffff; opacity: 80%;">التوظيف</a>
+                          <a href="#contact" class="text-reset link-custom" style="color: #ffffff; opacity: 80%;">تواصل معنا</a>
+                          <a href="#contact" style="color: #ffffff; opacity: 80%;">English</a>
+              
+                      </nav>
+
+    </section>
+
+    <hr class="line">
+    <section>
+    <div class="text-end p-4 Rights"  style="color: #ffffff; opacity: 60%;">
+      
+© 2022البيئة,كافة الحقوق محفوظة.
+
+    </div>
+    </section>
+
+
+  </div>
+</footer>
+
+<!-- /FOOTER      -->
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+
+</body>
+</html>
